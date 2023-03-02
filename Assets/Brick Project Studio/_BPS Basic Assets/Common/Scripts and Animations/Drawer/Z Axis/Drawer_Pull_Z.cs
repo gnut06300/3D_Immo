@@ -51,6 +51,21 @@ namespace SojaExiles
 			}
 
 		}
+		public void OpenCloseDoor()
+		{
+			if (open == false)
+			{
+				StartCoroutine(opening());
+			}
+			else
+			{
+				if (open == true)
+				{
+					StartCoroutine(closing());
+				}
+
+			}
+		}
 
 		IEnumerator opening()
 		{
