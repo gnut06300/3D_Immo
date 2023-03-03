@@ -51,6 +51,22 @@ namespace SojaExiles
 
 		}
 
+		public void OpenCloseWindows()
+		{
+			if (open == false)
+			{
+				StartCoroutine(opening());
+			}
+			else
+			{
+				if (open == true)
+				{
+					StartCoroutine(closing());
+				}
+
+			}
+		}
+
 		IEnumerator opening()
 		{
 			print("you are opening the Window");
