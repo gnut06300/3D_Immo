@@ -24,6 +24,12 @@ public class LoadFirstScene : MonoBehaviour, IPointerEnterHandler
         Debug.Log("button cliqué");
     }
 
+    public void LoadSceneSmallBuilding()
+    {
+        SceneManager.LoadScene(2);
+        Debug.Log("button cliqué");
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         
